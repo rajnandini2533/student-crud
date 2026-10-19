@@ -78,6 +78,24 @@ Filter examples:
 - `GET /students?course=BTech`
 - `GET /students?born_after=2004`
 
+- curl examples (Windows CMD):
+```bash
+# Create
+curl -X POST http://127.0.0.1:8000/students -H "Content-Type: application/json" -d "{\"name\":\"Amit Kumar\",\"dob\":\"2004-05-15\",\"email\":\"amit2@example.com\",\"phone\":\"9876543210\"}"
+
+# List all
+curl http://127.0.0.1:8000/students
+
+# View one
+curl http://127.0.0.1:8000/students/1
+
+# Update
+curl -X PATCH http://127.0.0.1:8000/students/1 -H "Content-Type: application/json" -d "{\"course\":\"BCA\"}"
+
+# Delete
+curl -X DELETE http://127.0.0.1:8000/students/1
+```
+
 ## Project Structure
 ```
 student-crud/
