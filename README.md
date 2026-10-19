@@ -29,6 +29,8 @@ operations. Built with **FastAPI** and **SQLite**.
 
 ## Installation
 ```bash
+git clone https://github.com/rajnandini2533/student-crud.git
+cd student-crud
 python -m venv venv
 venv\Scripts\activate          # Windows
 # source venv/bin/activate     # Mac/Linux
